@@ -1,62 +1,93 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bibash Japrel Blog</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <style>
-    body {
-margin: 0;
-  padding: 0;
-  background: radial-gradient(dimgray, black);
-  height: 100vh;
- }
-h3 {
+    @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+h1 {
   margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  color: black;
-  font-family: Times New Roman, serif;
-  /* background: -webkit-linear-gradient(deeppink, yellow, deeppink, purple);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; */
-  font-size: 6.5vw;
-  /* text-transform: uppercase; */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4em;
+  color: #333;
+  -webkit-text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
+  -moz-text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
+  text-shadow: 0 2px 1px rgba(0, 0, 0, 0.6), 0 0 2px rgba(0, 0, 0, 0.7);
+  word-spacing: 16px;
 }
-h3:before {
-  content: attr(data-text);
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.4em;
+  font-weight: bold;
+  color: #222;
+  text-shadow: 0 0 40px #FFFFFF, 0 0 30px #FFFFFF, 0 0 20px #FFFFFF;
+}
+
+.container {
   position: absolute;
   top: 0;
-  left: 0;
-  transform-origin: bottom;
-  transform: rotateX(180deg);
-  line-height: 1.14em;
- background: linear-gradient(0deg, #000000 0, transparent 70%);
-    -webkit-background-clip: text;
-  -webkit-text-color: transparent;
-  opacity: 0.3;
+  bottom: 0;
+  width: 100%;
+  background: url('');
+  background-size: cover;
 }
-header {
-  display: block;
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  height: auto;
+  display: table;
+}
+
+.content {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.item {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
   text-align: center;
-  line-height: 1.5em;
-  margin: 50px;
-  font-size: 2vw;
-  background: linear-gradient(deeppink, purple, yellow, purple);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  
+  padding: 8px;
+}
+
+@media only screen and (min-width: 800px) {
+  h1 {
+    font-size: 6em;
+  }
+  p {
+    font-size: 1.6em;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.2em;
+  }
 }
   </style>
-<body>
-  <header>
-    <h1>Rakshitha Prakash</h1>
-    <h2>Web Developer</h2>
-  </header>
-<h3 data-text="Coming soon...">Coming soon...</h3>
-  <footer>
-    
-  </footer>
-</body>
+  <body>
+	<div class="container">
+  <div class="wrapper">
+    <div class="content">
+      <div class="item">
+        <!-- Place your content here to have it be centered vertically and horizontally  -->
+        <h1>COMING SOON</h1>
+        <p>This website is under construction.</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
 </html>
